@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="./css/cubeRotation.css" />
+    <title>はじめての Three.js アプリ</title>
+  </head>
+  <body>
+    <canvas id="myCanvas"></canvas><br>
+    <div style="float: left; margin: 10px;">
+      回転<br>
+      <input type="checkbox" id="xrotate">X軸で回転<br>
+      <input type="checkbox" id="yrotate">Y軸で回転<br>
+      <input type="checkbox" id="zrotate">Z軸で回転
+    </div>
+    <div style="float: left; margin: 10px;">
+      背景色<br>
+      <input type="button" style="background-color: #FFFFFF; width:100px;" id="white-bg"><br>
+      <input type="button" style="background-color: #000000; width:100px;" id="black-bg"><br>
+      <input type="button" style="background-color: #00FF00; width:100px;" id="green-bg">
+    </div>
+
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://unpkg.com/three@0.148.0/build/three.module.js",
+          "three/addons/": "https://unpkg.com/three@0.148.0/examples/jsm/"
+        }
+      }
+    </script>
+
+    <script type="module" src="./js/cubeRotation.js"></script>
+  </body>
+</html>
